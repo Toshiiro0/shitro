@@ -73,6 +73,8 @@ Tab1:Button("Realistic Speed Glitch (X)",function(bool)
     end)
 end)
 
+
+
 Tab1:Button("Animation Pack", function()
 local FreeAnimationPack = Instance.new("ScreenGui")
 				local AnimationPack = Instance.new("TextButton")
@@ -251,6 +253,27 @@ local FreeAnimationPack = Instance.new("ScreenGui")
 						Animations.Visible = false
 					end
 				end)
+end)
+
+Tab1:Button("FLY (X)",function(bool)
+    loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
+end)
+
+Tab1:Button("Headless Client Sided",function(bool)
+    getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+end)
+
+Tab1:Button("Korblox Client Sided",function(bool)
+	local ply = game.Players.LocalPlayer
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
 end)
 
 Tab1:Slider("Fov Camera",80,200,function(text)
