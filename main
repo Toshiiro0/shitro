@@ -20,7 +20,7 @@ Tab1:Button("Speed Glitch (Q)",function(bool)
     loadstring(game:HttpGet("https://pastebin.com/raw/QW5Whap9"))()
 end)
 
-Tab1:Button("Realistic Speed Glitch (X)",function(bool)
+Tab1:Button("Realistic Speed Glitch (Z)",function(bool)
     local Player = game:GetService("Players").LocalPlayer
     local Mouse = Player:GetMouse()
     local SpeedGlitch = false
